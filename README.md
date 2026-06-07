@@ -1,6 +1,8 @@
 ## Live Demo
 
 Live App: https://datadojo-iq-foundry.streamlit.app/
+<img width="1672" height="941" alt="ChatGPT Image Jun 8, 2026, 01_11_39 AM" src="https://github.com/user-attachments/assets/86b5a5f9-6645-417c-9a73-8c4e30628aed" />
+
 
 # DataDojo IQ
 
