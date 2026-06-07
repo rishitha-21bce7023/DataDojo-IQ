@@ -1,3 +1,7 @@
+## Live Demo
+
+Live App: https://datadojo-iq-foundry.streamlit.app/
+
 # DataDojo IQ
 
 **From KT Calls to Data Engineering Readiness.**
