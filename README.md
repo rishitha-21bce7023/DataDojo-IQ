@@ -1,6 +1,6 @@
 # DataDojo IQ
 
-**From KT calls to DataOps readiness.**
+**From KT Calls to Data Engineering Readiness.**
 
 DataDojo IQ is a multi-agent Data Engineering readiness platform built for the Microsoft Foundry Reasoning Agents challenge. It helps data engineering teams convert learning content, role expectations, assessments, and pipeline practice into a structured readiness workspace for learners and managers.
 
