@@ -3,10 +3,10 @@
 Live App: https://datadojo-iq-foundry.streamlit.app/
 
 
-<img width="1672" height="941" alt="ChatGPT Image Jun 8, 2026, 01_11_39 AM" src="https://github.com/user-attachments/assets/86b5a5f9-6645-417c-9a73-8c4e30628aed" />
-
-
 # DataDojo IQ
+
+<img width="1672" height="941" alt="ChatGPT Image Jun 8, 2026, 01_11_39 AM" src="https://github.com/user-attachments/assets/7c95e5ab-25a1-4d7f-8ffa-030c76af113a" />
+
 
 **From KT Calls to Data Engineering Readiness.**
 
