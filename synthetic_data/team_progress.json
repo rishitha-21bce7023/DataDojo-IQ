@@ -1,0 +1,34 @@
+[
+  {
+    "team_id": "TEAM-A",
+    "role": "Junior Data Engineer",
+    "learners": 5,
+    "ready_count": 2,
+    "needs_revision_count": 3,
+    "highest_risk_area": "UPSERT and watermark rules"
+  },
+  {
+    "team_id": "TEAM-B",
+    "role": "Data Engineer",
+    "learners": 4,
+    "ready_count": 3,
+    "needs_revision_count": 1,
+    "highest_risk_area": "Incremental load design"
+  },
+  {
+    "team_id": "TEAM-C",
+    "role": "Senior Data Engineer",
+    "learners": 3,
+    "ready_count": 1,
+    "needs_revision_count": 2,
+    "highest_risk_area": "Schema evolution and merge conflicts"
+  },
+  {
+    "team_id": "TEAM-D",
+    "role": "Data Architect",
+    "learners": 2,
+    "ready_count": 1,
+    "needs_revision_count": 1,
+    "highest_risk_area": "Semantic modeling and governance standards"
+  }
+]

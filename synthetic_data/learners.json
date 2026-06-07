@@ -1,0 +1,34 @@
+[
+  {
+    "learner_id": "L-1001",
+    "role": "Junior Data Engineer",
+    "target_skill": "Metadata Pipeline Configuration",
+    "practice_score_avg": 68,
+    "hours_studied": 12,
+    "status": "Needs Revision"
+  },
+  {
+    "learner_id": "L-1002",
+    "role": "Data Engineer",
+    "target_skill": "Incremental Load Design",
+    "practice_score_avg": 82,
+    "hours_studied": 20,
+    "status": "Ready"
+  },
+  {
+    "learner_id": "L-1003",
+    "role": "Senior Data Engineer",
+    "target_skill": "Advanced Pipeline Troubleshooting",
+    "practice_score_avg": 74,
+    "hours_studied": 16,
+    "status": "Needs Revision"
+  },
+  {
+    "learner_id": "L-1004",
+    "role": "Data Architect",
+    "target_skill": "Lakehouse Architecture Standards",
+    "practice_score_avg": 79,
+    "hours_studied": 18,
+    "status": "Ready"
+  }
+]
