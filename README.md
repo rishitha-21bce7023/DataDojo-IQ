@@ -49,6 +49,25 @@ Foundry IQ
 - Dark theme support
 - Synthetic data only
 
+## Microsoft Foundry Setup
+
+DataDojo IQ uses Microsoft Foundry to create and test the DataDojo-IQ-Orchestrator agent.
+
+Foundry setup:
+- Project: datadojo-iq
+- Agent: DataDojo-IQ-Orchestrator
+- Model: gpt-4.1-mini
+- Knowledge grounding: uploaded synthetic Data Engineering documents through vector index
+
+Knowledge files:
+- dataops_learning_guide.md
+- pipeline_config_rules.md
+- load_type_rules.md
+- troubleshooting_guide.md
+- certification_requirements.md
+
+The agent uses these synthetic documents to generate role-based learning plans, grounded assessment questions, configuration feedback, and readiness recommendations.
+
 ## How to Run
 
 ```bash
