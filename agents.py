@@ -1,7 +1,7 @@
 def map_role_to_skills(role):
     role_skills = {
         "Junior Data Engineer": [
-            "Raw Bronze Silver architecture",
+            "Medallion architecture",
             "Basic SQL for data validation",
             "Metadata JSON configuration",
             "Load type basics",
@@ -44,7 +44,7 @@ def generate_study_plan(role, available_hours):
 
     role_focus = {
         "Junior Data Engineer": [
-            "Learn raw bronze silver architecture and basic pipeline flow",
+            "Learn medallion architecture and basic pipeline flow",
             "Practice metadata JSON configuration and layer rules",
             "Learn load types primary keys and watermark basics",
             "Complete basic troubleshooting and readiness assessment"

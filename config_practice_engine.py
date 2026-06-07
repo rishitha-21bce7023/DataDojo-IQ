@@ -1,20 +1,20 @@
 def generate_config_task(role):
     tasks = {
         "Junior Data Engineer": {
-            "task": "Create a basic bronze layer configuration for a SAP material master table.",
+            "task": "Create a basic bronze layer configuration for a customer table.",
             "requirements": {
-                "source_system": "SAP_ECC",
-                "source_table": "material_master",
+                "source_system": "Source_system_1",
+                "source_table": "customers",
                 "target_layer": "bronze",
                 "load_type": "APPEND",
                 "required_fields": ["source_system", "source_table", "target_layer", "load_type"]
             }
         },
         "Data Engineer": {
-            "task": "Create a silver layer configuration for a SAP material master table using UPSERT.",
+            "task": "Create a silver layer configuration for a customer table using UPSERT.",
             "requirements": {
-                "source_system": "SAP_ECC",
-                "source_table": "material_master",
+                "source_system": "Source_system_1",
+                "source_table": "customers",
                 "target_layer": "silver",
                 "load_type": "UPSERT",
                 "primary_keys": ["mandt", "matnr"],
@@ -24,18 +24,18 @@ def generate_config_task(role):
         "Senior Data Engineer": {
             "task": "Review a silver UPSERT configuration and identify risks related to duplicate keys and schema evolution.",
             "requirements": {
-                "source_system": "SAP_ECC",
-                "source_table": "sales_order",
+                "source_system": "Source_system_1",
+                "source_table": "customers",
                 "target_layer": "silver",
                 "load_type": "UPSERT",
-                "primary_keys": ["mandt", "vbeln"],
+                "primary_keys": ["id", "date"],
                 "risk_checks": ["duplicate_keys", "schema_evolution", "merge_conflict"]
             }
         },
         "Data Architect": {
             "task": "Design a medallion architecture mapping for an enterprise logistics dataset.",
             "requirements": {
-                "domain": "logistics",
+                "domain": "tech",
                 "layers": ["raw", "bronze", "silver", "gold"],
                 "architecture_focus": ["governance", "semantic_layer", "lineage", "reporting_readiness"]
             }
