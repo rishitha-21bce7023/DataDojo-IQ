@@ -5,6 +5,7 @@ import os
 
 import streamlit as st
 
+from foundry_client import ask_foundry_agent
 from agents import map_role_to_skills, generate_study_plan
 from assessment_engine import generate_questions, calculate_readiness
 from config_practice_engine import generate_config_task, evaluate_config_answer
@@ -2040,6 +2041,7 @@ with tab2:
                 f"{index}. {question['question']}"
                 for index, question in enumerate(questions, start=1)
             ]
+
             info_card(
                 "Practice Questions",
                 html_list(question_items)
@@ -2051,8 +2053,27 @@ with tab2:
 
         info_card(
             "Readiness Result",
-            f"<p><strong>Practice Score:</strong> {score}</p><p><strong>Readiness Status:</strong> {status_badge_html(readiness)}</p>",
+            f"<p><strong>Practice Score:</strong> {score}</p>"
+            f"<p><strong>Readiness Status:</strong> {status_badge_html(readiness)}</p>",
         )
+
+        st.markdown("### Foundry IQ Grounded Assessment")
+
+        foundry_prompt = st.text_area(
+            "Ask DataDojo-IQ-Orchestrator",
+            value="Generate five grounded assessment questions about UPSERT and incremental load rules for a Data Engineer using the attached knowledge files.",
+            height=120,
+            key="foundry_assessment_prompt",
+        )
+
+        if st.button("Ask Foundry Agent", key="ask_foundry_assessment"):
+            with st.spinner("Calling Microsoft Foundry agent..."):
+                foundry_response = ask_foundry_agent(foundry_prompt)
+
+            info_card(
+                "Microsoft Foundry Response",
+                f"<p>{escape(foundry_response).replace(chr(10), '<br>')}</p>",
+            )
 
     with col2:
         render_workspace_visual(
@@ -2094,6 +2115,23 @@ with tab3:
                 f"<p><strong>Readiness Status:</strong> {status_badge_html(readiness)}</p>"
                 "<h3>Feedback</h3>"
                 + html_list(feedback),
+            )
+            st.markdown("### Foundry IQ Config Feedback")
+
+        foundry_config_prompt = st.text_area(
+            "Ask Foundry Agent for config feedback",
+            value="A learner selected UPSERT but did not provide primary keys. What feedback should the Config Practice Evaluator Agent give?",
+            height=120,
+            key="foundry_config_prompt"
+        )
+
+        if st.button("Ask Foundry Agent for Feedback", key="ask_foundry_config"):
+            with st.spinner("Calling Microsoft Foundry agent..."):
+                foundry_response = ask_foundry_agent(foundry_config_prompt)
+
+            info_card(
+                "Microsoft Foundry Config Feedback",
+                f"<p>{escape(foundry_response).replace(chr(10), '<br>')}</p>"
             )
 
     with col2:
