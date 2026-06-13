@@ -36,7 +36,7 @@ def generate_questions(role):
                 "answer": "silver"
             }
         ],
-        "Senior Data Engineer": [
+        "Senior Data Engineer / Manager": [
             {
                 "question": "What is a common cause of multiple source rows matching the same target row in MERGE?",
                 "answer": "duplicate keys"
@@ -54,22 +54,22 @@ def generate_questions(role):
                 "answer": "to prevent recurring failures"
             }
         ],
-        "Data Architect": [
+        "Director": [
             {
-                "question": "What architecture pattern uses raw bronze silver and gold layers?",
-                "answer": "medallion"
+                "question": "What should a director review when readiness varies across multiple domains?",
+                "answer": "cross-domain risk"
             },
             {
-                "question": "Why is a semantic layer useful in enterprise data platforms?",
-                "answer": "it gives business meaning to data"
+                "question": "What should be prioritized when repeated data quality gaps slow delivery?",
+                "answer": "capability building"
             },
             {
-                "question": "What does data lineage help teams understand?",
-                "answer": "data flow and origin"
+                "question": "What does domain-level governance help teams maintain?",
+                "answer": "consistency and trust"
             },
             {
-                "question": "Why are governance standards important in enterprise data architecture?",
-                "answer": "to ensure consistency and trust"
+                "question": "What type of plan should guide the next month after readiness risks are found?",
+                "answer": "30-day action plan"
             }
         ]
     }

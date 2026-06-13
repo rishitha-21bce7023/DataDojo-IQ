@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <linearGradient id="dojoMark" x1="12" y1="12" x2="84" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="0.55" stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#A3E635"/>
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="28" fill="#07111F"/>
+  <path d="M25 24h23c17 0 29 10 29 24S65 72 48 72H25V24Z" fill="none" stroke="url(#dojoMark)" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M41 38h8c7 0 12 4 12 10s-5 10-12 10h-8V38Z" fill="#22D3EE" opacity=".24"/>
+  <circle cx="25" cy="24" r="5" fill="#A3E635"/>
+  <circle cx="76" cy="48" r="5" fill="#22D3EE"/>
+  <circle cx="25" cy="72" r="5" fill="#6366F1"/>
+</svg>

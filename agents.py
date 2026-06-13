@@ -11,23 +11,23 @@ def map_role_to_skills(role):
         "Data Engineer": [
             "Metadata driven pipeline development",
             "UPSERT and incremental load logic",
-            "ADF orchestration basics",
-            "Databricks transformation flow",
+            "Pipeline orchestration basics",
+            "Transformation flow",
             "Schema mapping and error debugging"
         ],
-        "Senior Data Engineer": [
+        "Senior Data Engineer / Manager": [
             "Reusable pipeline framework design",
             "Complex merge and deduplication logic",
             "Schema evolution handling",
             "Performance optimization",
-            "Advanced troubleshooting and root cause analysis"
+            "Advanced troubleshooting and team coaching"
         ],
-        "Data Architect": [
+        "Director": [
             "Lakehouse architecture standards",
-            "Medallion architecture design",
-            "Data modeling and governance",
-            "Semantic layer design",
-            "Enterprise data quality and lineage rules"
+            "Domain-level readiness governance",
+            "Strategic capability planning",
+            "Cross-domain data quality risk review",
+            "Investment and training prioritization"
         ]
     }
 
@@ -52,20 +52,20 @@ def generate_study_plan(role, available_hours):
         "Data Engineer": [
             "Understand metadata driven pipeline development",
             "Practice UPSERT and incremental load design",
-            "Learn ADF orchestration and Databricks transformation flow",
+            "Learn orchestration and transformation flow",
             "Complete pipeline debugging and readiness assessment"
         ],
-        "Senior Data Engineer": [
+        "Senior Data Engineer / Manager": [
             "Design reusable pipeline framework patterns",
             "Practice schema evolution and complex merge handling",
-            "Learn performance optimization and root cause analysis",
-            "Complete advanced troubleshooting assessment"
+            "Learn performance risk review and coaching patterns",
+            "Complete team readiness and troubleshooting assessment"
         ],
-        "Data Architect": [
-            "Review lakehouse and medallion architecture standards",
-            "Practice data modeling and governance scenarios",
-            "Learn semantic layer and lineage design",
-            "Complete architecture readiness assessment"
+        "Director": [
+            "Review multi-domain readiness and governance standards",
+            "Practice capability maturity and risk prioritization",
+            "Learn cross-domain investment and training planning",
+            "Complete director readiness brief review"
         ]
     }
 

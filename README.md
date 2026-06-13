@@ -2,11 +2,7 @@
 
 Live App: https://datadojo-iq-foundry.streamlit.app/
 
-
 # DataDojo IQ
-
-<img width="1672" height="941" alt="ChatGPT Image Jun 8, 2026, 01_11_39 AM" src="https://github.com/user-attachments/assets/7c95e5ab-25a1-4d7f-8ffa-030c76af113a" />
-
 
 **From KT Calls to Data Engineering Readiness.**
 
@@ -16,298 +12,238 @@ The project includes a polished Streamlit frontend connected to a Microsoft Foun
 
 ---
 
-## Problem
+## ✨ What Makes DataDojo IQ Unique?
 
-Data engineering teams often depend on repeated KT calls, scattered documentation, and manual readiness checks. New team members may struggle to understand pipeline architecture, load strategies, configuration standards, troubleshooting patterns, and governance expectations.
+<table>
+<tr>
+<td width="50%">
 
-This creates common issues such as:
+### 🧭 AI Learning Roadmaps
 
-* Inconsistent onboarding experience
-* Repeated explanation of the same concepts
-* Manual readiness tracking
-* Weak visibility for managers
-* Gaps in understanding pipeline configuration and load rules
+Generate personalized role-based learning paths using Foundry IQ grounded knowledge.
 
----
+</td>
+<td width="50%">
 
-## Solution
+### 📝 AI Readiness Quizzes
 
-DataDojo IQ provides a multi-agent readiness workflow that helps learners understand required skills, generate study plans, complete role-based assessments, practice pipeline configuration scenarios, and view manager-level readiness insights.
+Generate role-specific quiz questions, auto-score answers, and show explanations.
 
-The platform combines:
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-* Streamlit for the learner and manager interface
-* Microsoft Foundry for the cloud reasoning agent
-* Foundry IQ vector index for grounded knowledge retrieval
-* Synthetic Data Engineering knowledge files for safe demo content
+### ⚙️ Config Practice Lab
 
----
+Practice realistic synthetic Data Engineering scenarios and get AI evaluation feedback.
 
-## Challenge Track
+</td>
+<td width="50%">
 
-**Reasoning Agents**
+### 📊 Manager & Director Insights
 
----
+Roll up readiness into team-level and executive-level insights.
 
-## Microsoft IQ Layer
-
-**Foundry IQ**
-
-Foundry IQ is used as the grounding layer through an uploaded vector index of synthetic Data Engineering documents. The Foundry agent retrieves from these documents to generate grounded assessment questions, configuration feedback, learning guidance, and readiness recommendations.
+</td>
+</tr>
+</table>
 
 ---
 
-## Microsoft Tools Used
+## 🧠 Product Flow
 
-* Microsoft Foundry
-* Foundry IQ
-* GitHub Copilot
-* Python
-* Streamlit
-* Azure AI Projects SDK
+```mermaid
+flowchart LR
+    A[User selects role and context] --> B[Foundry IQ generates learning roadmap]
+    B --> C[AI generates quiz]
+    C --> D[User answers assessment]
+    D --> E[App calculates score]
+    E --> F[Foundry explains strengths and gaps]
+    F --> G[Config Lab practice]
+    G --> H[Manager insights]
+    H --> I[Director readiness brief]
+```
 
 ---
 
-## Architecture
+## 🥋 Career Mission Map
+
+```mermaid
+flowchart LR
+    J[Junior Data Engineer<br/>Task execution] --> D[Data Engineer<br/>Data product ownership]
+    D --> S[Senior Data Engineer / Manager<br/>Domain readiness]
+    S --> X[Director<br/>Multi-domain strategy]
+```
+
+| Role                              | Mission Focus                      | AI Activity                            | Unlocks                    |
+| --------------------------------- | ---------------------------------- | -------------------------------------- | -------------------------- |
+| 🟦 Junior Data Engineer           | Task execution and pipeline basics | Roadmap, quiz, config practice         | Data Product Ownership     |
+| 🟩 Data Engineer                  | Own one data product               | Scenario labs and readiness assessment | Domain Leadership          |
+| 🟪 Senior Data Engineer / Manager | Guide team and domain readiness    | Manager insights and team action plan  | Multi-domain Strategy      |
+| 🟧 Director                       | Oversee multiple domains           | Executive readiness brief              | Enterprise Data Excellence |
+
+---
+
+## 🏗️ Architecture
+
+```mermaid
+flowchart TD
+    A[Streamlit App] --> B[DataDojo-IQ-Orchestrator Agent]
+    B --> C[Microsoft Foundry]
+    C --> D[Foundry IQ Vector Index]
+    D --> E[Synthetic Data Engineering Knowledge Files]
+    E --> F[Grounded Roadmaps]
+    E --> G[AI Quizzes]
+    E --> H[Config Feedback]
+    E --> I[Manager & Director Insights]
+```
+
+---
+
+## 🛠️ Microsoft Tools Used
+
+| Tool                      | Usage                                             |
+| ------------------------- | ------------------------------------------------- |
+| **Microsoft Foundry**     | Agent creation and orchestration                  |
+| **Foundry IQ**            | Grounding layer through synthetic knowledge files |
+| **Azure AI Projects SDK** | Streamlit-to-Foundry integration                  |
+| **GitHub Copilot**        | Assisted development                              |
+| **Streamlit**             | Interactive web app                               |
+| **Python**                | App logic, parsing, scoring, and UI control       |
+
+---
+
+## 📚 Foundry Knowledge Base
+
+The Foundry agent is grounded using synthetic Data Engineering documents:
 
 ```text
-Streamlit App
-    ↓
-DataDojo IQ frontend workflow
-    ↓
-Microsoft Foundry Agent
-DataDojo-IQ-Orchestrator
-    ↓
-Foundry IQ Vector Index
-Synthetic Data Engineering knowledge files
-    ↓
-Grounded response
-    ↓
-Streamlit App
+knowledge_base/
+├── dataops_learning_guide.md
+├── pipeline_config_rules.md
+├── load_type_rules.md
+├── troubleshooting_guide.md
+└── certification_requirements.md
 ```
 
----
+These files help the agent generate:
 
-## Agent Workflow
-
-1. **User Profile Agent**
-   Captures learner role, target skill, available study hours, and readiness goal.
-
-2. **Role Skill Mapper Agent**
-   Maps selected role to expected Data Engineering skills.
-
-3. **Learning Path Curator Agent**
-   Selects relevant learning topics from the grounded knowledge base.
-
-4. **Study Plan Generator Agent**
-   Converts learning needs into a practical four-week plan.
-
-5. **Assessment Agent**
-   Generates role-specific readiness questions grounded in Foundry IQ knowledge files.
-
-6. **Config Practice Evaluator Agent**
-   Reviews pipeline configuration answers and provides feedback.
-
-7. **Manager Insights Agent**
-   Summarizes synthetic team readiness, risk areas, and recommended actions.
+* Role-based learning roadmaps
+* Grounded quiz questions
+* Config lab scenarios
+* Score interpretation
+* Revision resources
+* Manager insights
+* Director readiness briefs
 
 ---
 
-## Features
+## 🧩 App Modules
 
-* Professional landing page
-* Multi-agent roadmap
-* Role-based learning plan
-* Streamlit to Microsoft Foundry agent connection
-* Foundry IQ grounded assessment generation
-* Pipeline configuration practice
-* Foundry-powered configuration feedback
-* Readiness scoring
-* Manager insights dashboard
-* Dark theme support
-* Synthetic data only
+### 1. 🧭 AI Learning Roadmap
 
----
+Users select role, domain, data product, target skill, study hours, and confidence level. Foundry generates a grounded week-by-week roadmap.
 
-## Microsoft Foundry Setup
+### 2. 📝 AI Assessment
 
-DataDojo IQ uses Microsoft Foundry to create and test the `DataDojo-IQ-Orchestrator` agent.
+Foundry generates quiz questions. The user answers them, and DataDojo IQ calculates the score automatically. The app then shows correct answers, explanations, readiness status, and recommended next steps.
 
-### Foundry setup
+### 3. ⚙️ Config Practice Lab
 
-* Project: `datadojo-iq`
-* Agent: `DataDojo-IQ-Orchestrator`
-* Model: `gpt-4.1-mini`
-* Knowledge grounding: uploaded synthetic Data Engineering documents through vector index
-* Frontend integration: Streamlit calls the Foundry agent using the Azure AI Projects SDK
+Foundry creates realistic synthetic pipeline scenarios. The learner submits an answer, and Foundry evaluates the solution with score-style feedback, risks, missing items, and best-practice guidance.
 
-### Knowledge files
+### 4. 📊 Manager Insights
 
-The following synthetic knowledge files are used for grounding:
+Managers can view synthetic readiness summaries, skill gaps, data product risks, coaching actions, and revision plans.
 
-* `dataops_learning_guide.md`
-* `pipeline_config_rules.md`
-* `load_type_rules.md`
-* `troubleshooting_guide.md`
-* `certification_requirements.md`
+### 5. 🧑‍💼 Director View
 
-The agent uses these documents to generate:
-
-* Role-based learning plans
-* Grounded assessment questions
-* Pipeline configuration feedback
-* Readiness recommendations
-* Manager-level learning insights
+Directors can generate executive readiness briefs across multiple synthetic domains with strategic recommendations and 30-day action plans.
 
 ---
 
-## Streamlit and Foundry Integration
+## 🔒 Data Safety
 
-The Streamlit application connects directly to the Microsoft Foundry agent.
+DataDojo IQ uses **synthetic data only**.
 
-When a user clicks **Ask Foundry Agent** in the Assessment or Config Practice section:
-
-1. Streamlit sends the prompt to the `DataDojo-IQ-Orchestrator` agent.
-2. The Foundry agent uses the uploaded vector index as the Foundry IQ grounding layer.
-3. The agent generates a grounded response.
-4. The response is displayed back inside the Streamlit interface.
-
-This creates a complete frontend to Foundry reasoning workflow.
-
----
-
-## Project Structure
-
-```text
-DataDojo-IQ/
-│
-├── app.py
-├── foundry_client.py
-├── agents.py
-├── assessment_engine.py
-├── config_practice_engine.py
-├── manager_insights.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-│
-├── assets/
-│   ├── hero_banner.png
-│   ├── hero_banner_transparent.png
-│   ├── learner_plan.png
-│   ├── assessment.png
-│   ├── config_practice.png
-│   └── manager_dashboard.png
-│
-├── knowledge_base/
-│   ├── dataops_learning_guide.md
-│   ├── pipeline_config_rules.md
-│   ├── load_type_rules.md
-│   ├── troubleshooting_guide.md
-│   └── certification_requirements.md
-│
-└── synthetic_data/
-    └── team_progress.json
-```
-
----
-
-## Environment Variables
-
-Create a `.env` file in the project root.
-
-```env
-AZURE_AI_PROJECT_ENDPOINT=your_foundry_project_endpoint
-AZURE_AI_AGENT_NAME=DataDojo-IQ-Orchestrator
-AZURE_AI_AGENT_VERSION=latest
-AZURE_TENANT_ID=your_azure_tenant_id
-```
-
-Do not commit `.env` to GitHub.
-
----
-
-## How to Run
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/rishitha-21bce7023/DataDojo-IQ.git
-cd DataDojo-IQ
-```
-
-### 2. Create and activate virtual environment
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-### 3. Install dependencies
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-### 4. Create `.env`
-
-Add the required Foundry endpoint, agent name, agent version, and tenant ID.
-
-### 5. Run the Streamlit app
-
-```bash
-python -m streamlit run app.py
-```
-
----
-
-## Demo Flow
-
-A typical demo can show:
-
-1. DataDojo IQ landing page
-2. Multi-agent readiness roadmap
-3. Role-based learning plan generation
-4. Local assessment question generation
-5. Foundry IQ grounded assessment response
-6. Pipeline configuration practice
-7. Foundry-powered configuration feedback
-8. Manager insights dashboard
-9. Microsoft Foundry agent and vector index setup
-
----
-
-## Data Safety
-
-This project uses only synthetic data and generic sample scenarios.
-
-It does not include:
+It does **not** include:
 
 * Real employee data
 * Real customer data
 * PII
 * Credentials
-* Confidential company data
-* Proprietary internal documents
-* Real project table names or internal system names
-
-All learning content, role examples, configuration examples, and team readiness data are synthetic and created only for demonstration.
+* Secrets
+* Confidential documents
+* Real company data
+* Real table names
+* Internal system names
 
 ---
 
-## Responsible AI Considerations
+## ⚙️ Environment Variables
 
-DataDojo IQ follows these safety principles:
+Create a local `.env` file or configure Streamlit Secrets during deployment.
+
+```env
+AZURE_AI_PROJECT_ENDPOINT=your_foundry_project_endpoint
+AZURE_AI_AGENT_NAME=DataDojo-IQ-Orchestrator
+AZURE_AI_AGENT_VERSION=latest
+AZURE_TENANT_ID=your_tenant_id
+AZURE_CLIENT_ID=your_client_id
+AZURE_CLIENT_SECRET=your_client_secret
+```
+
+> ⚠️ Do not commit `.env` to GitHub.
+
+---
+
+## 🧪 Run Locally
+
+```bash
+git clone https://github.com/rishitha-21bce7023/DataDojo-IQ.git
+cd DataDojo-IQ
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+python -m pip install -r requirements.txt
+python -m streamlit run app.py
+```
+
+---
+
+## 🚀 Deployment
+
+The app is deployed using **Streamlit Cloud**.
+
+Secrets are configured using Streamlit Secrets and are not stored in GitHub.
+
+---
+
+## ✅ Responsible AI Notes
+
+DataDojo IQ follows these principles:
 
 * Uses synthetic data only
-* Avoids confidential or personal information
-* Keeps manager insights aggregated
-* Grounds Foundry responses in approved synthetic knowledge files
-* Clearly separates demo logic from production usage
-* Provides human-readable feedback and readiness status
+* Avoids confidential and personal information
+* Grounds responses using approved synthetic knowledge files
+* Provides explanations and recommendations
+* Keeps manager and director insights aggregated
+* Uses external learning resources for revision and practice
 
 ---
 
-## Submission Summary
+## 🏁 Submission Summary
 
-DataDojo IQ demonstrates a multi-agent Data Engineering readiness workflow using Microsoft Foundry and Foundry IQ. It connects a polished Streamlit frontend with a Microsoft Foundry agent that uses synthetic knowledge documents as a vector-index grounding layer. The result is a safe, demoable, and practical enterprise learning readiness platform for learners and managers.
+DataDojo IQ demonstrates a Microsoft Foundry-powered multi-agent readiness platform for Data Engineering teams. It combines Foundry IQ grounding, AI-generated learning roadmaps, dynamic assessments, automatic scoring, config practice, and leadership insights in a premium Streamlit experience.
+
+<div align="center">
+
+### Built by **Rishitha** for the **Microsoft Foundry Reasoning Agents Challenge**
+
+![Built with Microsoft Foundry](https://img.shields.io/badge/Built%20with-Microsoft%20Foundry-0F62FE?style=for-the-badge\&logo=microsoft\&logoColor=white)
+![Powered by Foundry IQ](https://img.shields.io/badge/Powered%20by-Foundry%20IQ-14B8A6?style=for-the-badge)
+![Synthetic Data Only](https://img.shields.io/badge/Synthetic%20Data%20Only-Safe%20Demo-059669?style=for-the-badge)
+
+</div>
