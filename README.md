@@ -1,6 +1,6 @@
 ## Live Demo
 
-Live App: https://datadojo-iq-foundry.streamlit.app/
+Live App: [https://datadojo-iq-foundry.streamlit.app/](https://datadojo-iq-foundry.streamlit.app/)
 
 # DataDojo IQ
 
